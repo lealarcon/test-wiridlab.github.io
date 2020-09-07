@@ -27,8 +27,9 @@ jobs:
             git reset --hard origin/master
             ls -ls
             yarn install && GIT_USER=lealarcon &&  yarn run build
-            git add -f build && git commit -m $CIRCLE_BUILD_NUM 
-            git subtree push --prefix build origin gh-pages
+            git add -f build
+            git commit -m $CIRCLE_BUILD_NUM 
+
             
 
 workflows:
