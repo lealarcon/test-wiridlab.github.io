@@ -27,6 +27,7 @@ jobs:
             yarn install && GIT_USER=lealarcon &&  yarn run build
             cd build
             git init && git add . 
+            git remote add origin git@github.com:lealarcon/test-wiridlab.github.io.git
             git commit -m $CIRCLE_BUILD_NUM 
             git push --force origin/gh-pages
 
