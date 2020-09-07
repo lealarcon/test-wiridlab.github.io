@@ -24,7 +24,7 @@ jobs:
             echo "machine github.com login lealarcon password $GITHUB_TOKEN" > ~/.netrc
             git fetch
             git checkout  gh-pages
-            git pull origin master --allow-unrelated-histories
+            git pull origin master
             yarn install && GIT_USER=lealarcon &&  yarn run build
             git add -f build && git commit -m $CIRCLE_BUILD_NUM 
             git subtree push --prefix build origin gh-pages
