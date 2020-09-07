@@ -28,7 +28,7 @@ jobs:
             cd build
             git init && git add . 
             git commit -m $CIRCLE_BUILD_NUM 
-            git push --force origin gh-pages
+            git push --force origin/gh-pages
 
             
 
