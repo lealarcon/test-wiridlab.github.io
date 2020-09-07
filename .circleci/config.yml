@@ -26,7 +26,6 @@ jobs:
             git checkout  gh-pages
             git pull origin master --allow-unrelated-histories
             yarn install && GIT_USER=lealarcon &&  yarn run build
-            git add -f build
 
 
 workflows:
