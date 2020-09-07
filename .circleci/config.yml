@@ -22,7 +22,6 @@ jobs:
             git config --global user.email "lealarcon@users.noreply.github.com"
             git config --global user.name "lealarcon"
             echo "machine github.com login lealarcon password $GITHUB_TOKEN" > ~/.netrc
-            git fetch
             git checkout  gh-pages
             git pull origin master --allow-unrelated-histories
             yarn install && GIT_USER=lealarcon &&  yarn run build
