@@ -27,7 +27,6 @@ jobs:
             yarn install && GIT_USER=lealarcon &&  yarn run build
             ls -ls
             git add -f build && git commit -m $CIRCLE_BUILD_NUM
-            #git push origin `git subtree split --prefix build master`:gh-pages --force	
             git subtree push --prefix build origin gh-pages
 
 
