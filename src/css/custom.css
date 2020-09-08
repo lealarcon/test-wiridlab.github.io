@@ -31,3 +31,8 @@
 .navbar--light a{
   color: #ffffff;
 }
+
+.navbar__link:hover, .navbar__link--active {
+  color: #000000 !important;
+  text-decoration: none;
+}
