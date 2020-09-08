@@ -23,7 +23,7 @@ module.exports = {
         },
         {
           href: 'https://wirid-lab.umng.edu.co',
-          label: 'Platform',
+          label: 'Plataforma',
         },
         {
           href: 'https://gissic.umng.edu.co/wirid-lab',
