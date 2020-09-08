@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[29],{84:function(a){a.exports=JSON.parse('{"allTagsPath":"/test-wiridlab.github.io/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/test-wiridlab.github.io/blog/tags/hola"}')}}]);
