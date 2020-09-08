@@ -1,3 +1,6 @@
+const remarkImages = require('remark-images');
+const rehypeTruncate = require('rehype-truncate');
+
 module.exports = {
   title: 'Wirid - Lab',
   tagline: 'Wireless Research Innovation and Development Laboratory',
@@ -34,6 +37,7 @@ module.exports = {
           href: 'https://github.com/lealarcon/test-wiridlab.github.io',
           label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
         },
       ],
     },
@@ -95,8 +99,11 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/lealarcon/test-wiridlab.github.io/blob/master/',
+            remarkPlugins: [remarkImages],
+            rehypePlugins: [rehypeTruncate],
         },
+    
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
